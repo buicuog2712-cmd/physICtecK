@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'Logic/workout_logic.dart';
 import 'UI/workoutUI.dart';
 import 'UI/workout_detail_screen.dart';
+import "UI/homeUI.dart";
+import "Logic/home_logic.dart";
 
 void main() {
   runApp(
@@ -82,3 +84,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     );
   }
 }
+      home: HomeUI(data: data),
+    );
+  }
+} 
